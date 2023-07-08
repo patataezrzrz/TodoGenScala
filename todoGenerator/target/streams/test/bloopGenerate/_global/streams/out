@@ -1,0 +1,4 @@
+[debug] [todogenerator-test] Classpath dependencies List()
+[debug] [todogenerator-test] Dependencies from configurations List(todogenerator)
+[debug] Bloop wrote the configuration of project 'todogenerator-test' to '/home/qnouro/Desktop/projects/todoGenerator/.bloop/todogenerator-test.json'
+[success] Generated .bloop/todogenerator-test.json

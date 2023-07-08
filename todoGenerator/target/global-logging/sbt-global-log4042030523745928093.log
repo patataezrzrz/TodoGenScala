@@ -1,0 +1,14 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__stopWatch network-4, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mlsp-definition json request: {"textDocument":{"uri":"file:///home/qnouro/Desktop/projects/todoGenerator/src/test/scala/math/MathUtilsTest.scala"},"position":{"line":4,"character":33}}[0m
+[0m[[0m[0mdebug[0m] [0m[0mlsp-definition found line: class MathUtilsTest extends AnyFunSuite{[0m
+[0m[[0m[0mdebug[0m] [0m[0mlsp-definition json request: {"textDocument":{"uri":"file:///home/qnouro/Desktop/projects/todoGenerator/src/test/scala/math/MathUtilsTest.scala"},"position":{"line":4,"character":33}}[0m
+[0m[[0m[0mdebug[0m] [0m[0mlsp-definition found line: class MathUtilsTest extends AnyFunSuite{[0m
+[0m[[0m[0mdebug[0m] [0m[0msymbol AnyFunSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0msymbol AnyFunSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0mlsp-definition potentials: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mlsp-definition potentials: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mlsp-definition locations Vector()[0m
+[0m[[0m[0mdebug[0m] [0m[0mlsp-definition locations Vector()[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[33mwarn[0m] [0m[0mIn the last 604 seconds, 5.914 (1.0%) were spent in GC. [Heap: 0.93GB free of 1.00GB, max 1.00GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.[0m

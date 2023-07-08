@@ -1,0 +1,13 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /home/qnouro/Desktop/projects/todoGenerator/target/scala-3.3.0/todogenerator_3-0.1.0-SNAPSHOT.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	helloWorld.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/qnouro/Desktop/projects/todoGenerator/target/scala-3.3.0/classes/helloWorld.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	helloWorld.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/qnouro/Desktop/projects/todoGenerator/target/scala-3.3.0/classes/helloWorld.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Hello$package$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/qnouro/Desktop/projects/todoGenerator/target/scala-3.3.0/classes/Hello$package$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Hello$package.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/qnouro/Desktop/projects/todoGenerator/target/scala-3.3.0/classes/Hello$package.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Hello$package.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/qnouro/Desktop/projects/todoGenerator/target/scala-3.3.0/classes/Hello$package.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
