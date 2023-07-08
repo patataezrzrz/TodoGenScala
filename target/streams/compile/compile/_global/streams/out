@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- Error: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/dataclass/DayOfWeek.scala:31:4 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m31 |[0m    [33mdef[0m [36mgetDayOfWeek[0m([36mdate[0m: [35mLocalDate[0m): [35mDayOfWeek[0m = DayOfWeek(date.getDayOfWeek().getValue())[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m    ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m   Incompatible combinations of tabs and spaces in indentation prefixes.[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m   Previous indent : 1 tab[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m   Latest indent   : 4 spaces[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

@@ -1,0 +1,39 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(~test, Some(c45e797c-9f8f-4d0c-b652-018273f0e58d), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__runWatch console0, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtStashOnFailure, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__preWatch console0, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(test, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / test[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mDayOfWeekTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- 'DayOfWeek' should be able to parse day of week *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  javax.management.InvalidAttributeValueException: Integer value is beyond 6 or below 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at dataclass.DayOfWeek$.apply(DayOfWeek.scala:26)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at dataclass.DayOfWeek$.getDayOfWeek(DayOfWeek.scala:31)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at dataclass.DayOfWeekTest.testFun$proxy1$1(DayOfWeekTest.scala:12)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at dataclass.DayOfWeekTest.$init$$$anonfun$1(DayOfWeekTest.scala:9)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply$$anonfun$1(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:31)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:21)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mMathUtilsTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- 'double' should handle 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- 'double' should handle 1[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- 'double' should handle negatives[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[33m- test with Int.MaxValue (pending)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 170 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 4[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 2, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 3, failed 1, canceled 0, ignored 0, pending 1[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m*** 1 TEST FAILED ***[0m[0m
+[0m[[0m[31merror[0m] [0m[0mFailed tests:[0m
+[0m[[0m[31merror[0m] [0m[0m	dataclass.DayOfWeekTest[0m
+[0m[[0m[31merror[0m] [0m[0m(Test / [31mtest[0m) sbt.TestsFailedException: Tests unsuccessful[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 0 s, completed Jul 8, 2023, 4:35:44 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(resumeFromFailure, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtPopOnFailure, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__postWatch console0, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__waitWatch console0, None, Some(CommandSource(console0)))[0m

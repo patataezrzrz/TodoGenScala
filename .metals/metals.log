@@ -367,3 +367,416 @@ WARNING: Unmatched cancel notification for request id 749
 2023.07.08 11:15:31 INFO  compiling todogenerator-test (1 scala source)[0m
 2023.07.08 11:15:32 INFO  time: compiled todogenerator in 18s[0m
 2023.07.08 11:15:37 INFO  time: compiled todogenerator-test in 5.37s[0m
+2023.07.08 15:38:19 INFO  Started: Metals version 0.11.12 in workspace '/home/qnouro/Desktop/projects/TodoGenScala' for client Visual Studio Code 1.74.3.[0m
+Jul 08, 2023 3:38:19 PM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.16.3 by Redgate
+Jul 08, 2023 3:38:19 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+Jul 08, 2023 3:38:19 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+Jul 08, 2023 3:38:23 PM org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:file:/home/qnouro/Desktop/projects/TodoGenScala/.metals/metals (H2 2.1)
+Jul 08, 2023 3:38:23 PM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.068s)
+Jul 08, 2023 3:38:24 PM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+Jul 08, 2023 3:38:24 PM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.07.08 15:38:24 INFO  time: initialize in 5.01s[0m
+2023.07.08 15:38:30 INFO  Attempting to connect to the build server...[0m
+2023.07.08 15:38:30 INFO  Bloop uses /usr/lib/jvm/java-11-openjdk-amd64 defined at /home/qnouro/.bloop/bloop.json[0m
+2023.07.08 15:38:41 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/qnouro/Desktop/projects/TodoGenScala/.metals/bsp.trace.json or /home/qnouro/.cache/metals/bsp.trace.json[0m
+2023.07.08 15:38:41 INFO  no build target found for /home/qnouro/Desktop/projects/TodoGenScala/build.sbt. Using presentation compiler with project's scala-library version: 3.2.2[0m
+2023.07.08 15:38:42 INFO  Attempting to connect to the build server...[0m
+2023.07.08 15:38:42 INFO  Bloop uses /usr/lib/jvm/java-11-openjdk-amd64 defined at /home/qnouro/.bloop/bloop.json[0m
+2023.07.08 15:38:42 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/qnouro/Desktop/projects/TodoGenScala/project/.metals/bsp.trace.json or /home/qnouro/.cache/metals/bsp.trace.json[0m
+2023.07.08 15:38:42 INFO  time: Connected to build server in 12s[0m
+2023.07.08 15:38:42 INFO  Connected to Build server: Bloop v1.5.6[0m
+2023.07.08 15:38:43 INFO  time: Imported build in 0.4s[0m
+2023.07.08 15:38:44 INFO  time: code lens generation in 13s[0m
+2023.07.08 15:38:48 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/lib/src.zip. Java symbols will not be available.[0m
+2023.07.08 15:38:48 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/lib/src.zip. Java symbols will not be available.[0m
+2023.07.08 15:38:48 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/lib/src.zip. Java symbols will not be available.[0m
+2023.07.08 15:38:48 INFO  time: indexed workspace in 4.91s[0m
+2023.07.08 15:49:23 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/Hello.scala[0m
+2023.07.08 15:49:28 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/Main.scala[0m
+Jul 08, 2023 3:49:35 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: Toplevel definition helloWorld is defined in
+  /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/Hello.scala
+and also in
+  /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/Main.scala
+One of these files should be removed from the classpath.
+dotty.tools.dotc.core.TypeError: Toplevel definition helloWorld is defined in
+  /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/Hello.scala
+and also in
+  /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/Main.scala
+One of these files should be removed from the classpath.
+	at dotty.tools.dotc.core.SymDenotations$PackageClassDenotation.dropStale$1(SymDenotations.scala:2447)
+	at dotty.tools.dotc.core.SymDenotations$PackageClassDenotation.recur$5(SymDenotations.scala:2411)
+	at dotty.tools.dotc.core.SymDenotations$PackageClassDenotation.computeMembersNamed(SymDenotations.scala:2467)
+	at dotty.tools.dotc.core.SymDenotations$ClassDenotation.membersNamed(SymDenotations.scala:2023)
+	at dotty.tools.dotc.core.SymDenotations$ClassDenotation.findMember(SymDenotations.scala:2074)
+	at dotty.tools.dotc.core.Types$Type.go$1(Types.scala:686)
+	at dotty.tools.dotc.core.Types$Type.goThis$1(Types.scala:811)
+	at dotty.tools.dotc.core.Types$Type.go$1(Types.scala:703)
+	at dotty.tools.dotc.core.Types$Type.findMember(Types.scala:879)
+	at dotty.tools.dotc.core.Types$Type.memberBasedOnFlags(Types.scala:669)
+	at dotty.tools.dotc.core.Types$Type.member(Types.scala:653)
+	at dotty.tools.dotc.core.Types$Type.allMembers$$anonfun$1(Types.scala:1020)
+	at scala.runtime.function.JProcedure2.apply(JProcedure2.java:15)
+	at scala.runtime.function.JProcedure2.apply(JProcedure2.java:10)
+	at dotty.tools.dotc.core.Types$Type.memberDenots$$anonfun$1(Types.scala:925)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.immutable.HashSet.foreach(HashSet.scala:937)
+	at dotty.tools.dotc.core.Types$Type.memberDenots(Types.scala:925)
+	at dotty.tools.dotc.core.Types$Type.allMembers(Types.scala:1020)
+	at scala.meta.internal.pc.IndexedContext$.accesibleMembers$1(IndexedContext.scala:149)
+	at scala.meta.internal.pc.IndexedContext$.scala$meta$internal$pc$IndexedContext$$$extractNames(IndexedContext.scala:207)
+	at scala.meta.internal.pc.IndexedContext$LazyWrapper.<init>(IndexedContext.scala:99)
+	at scala.meta.internal.pc.IndexedContext$.apply(IndexedContext.scala:87)
+	at scala.meta.internal.pc.completions.CompletionProvider.completions(CompletionProvider.scala:62)
+
+2023.07.08 15:49:42 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/Main.scala[0m
+Jul 08, 2023 3:49:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/Main.scala
+java.util.concurrent.CompletionException: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/Main.scala
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:743)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:731)
+	at java.base/java.util.concurrent.CompletableFuture.thenAcceptAsync(CompletableFuture.java:2112)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.thenAccept(FutureConvertersImpl.scala:37)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:279)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/Main.scala
+	at scala.meta.internal.metals.debug.DebugProvider.debugDiscovery(DebugProvider.scala:469)
+	at scala.meta.internal.metals.MetalsLspService.executeCommand(MetalsLspService.scala:2031)
+	at scala.meta.metals.lsp.DelegatingScalaService.executeCommand(DelegatingScalaService.scala:169)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	... 9 more
+
+2023.07.08 15:49:45 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/Main.scala[0m
+2023.07.08 15:50:18 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/Main.scala[0m
+2023.07.08 15:50:35 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/Main.scala[0m
+2023.07.08 15:51:48 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/runner/Main.scala[0m
+2023.07.08 15:51:59 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/runner/Runner.scala[0m
+2023.07.08 15:52:01 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/runner/Runner.scala[0m
+2023.07.08 15:52:44 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/runner/Runner.scala[0m
+2023.07.08 15:53:12 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/runner/Runner.scala[0m
+2023.07.08 15:53:23 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/runner/Runner.scala[0m
+2023.07.08 15:53:55 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/runner/Runner.scala[0m
+2023.07.08 15:54:41 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/dataclass/Category.scala[0m
+Jul 08, 2023 3:55:11 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 582
+2023.07.08 15:55:12 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/runner/Runner.scala[0m
+2023.07.08 15:55:31 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/runner/Runner.scala[0m
+2023.07.08 15:55:42 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/runner/Runner.scala[0m
+2023.07.08 15:56:19 WARN  Using indexes to guess the definition of getCurrentDayOfYear[0m
+2023.07.08 15:57:15 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/runner/Runner.scala[0m
+2023.07.08 15:58:14 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/dataclass/Category.scala[0m
+2023.07.08 15:58:29 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/dataclass/DayOfWeek.scala[0m
+2023.07.08 15:58:33 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/dataclass/DayOfWeek.scala[0m
+2023.07.08 15:58:33 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/dataclass/DayOfWeek.scala[0m
+2023.07.08 15:58:34 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/runner/Runner.scala[0m
+2023.07.08 15:58:37 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/dataclass/DayOfWeek.scala[0m
+2023.07.08 15:58:59 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/dataclass/DayOfWeek.scala[0m
+2023.07.08 15:59:04 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/dataclass/DayOfWeek.scala[0m
+2023.07.08 15:59:14 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/runner/Runner.scala[0m
+2023.07.08 15:59:29 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/dataclass/DayOfWeek.scala[0m
+2023.07.08 15:59:33 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/dataclass/Category.scala[0m
+Jul 08, 2023 3:59:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1230
+2023.07.08 15:59:42 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/runner/Runner.scala[0m
+2023.07.08 16:00:11 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/runner/Runner.scala[0m
+2023.07.08 16:02:26 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/runner/Runner.scala[0m
+2023.07.08 16:02:51 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/runner/Runner.scala[0m
+2023.07.08 16:09:31 INFO  Started: Metals version 0.11.12 in workspace '/home/qnouro/Desktop/projects/TodoGenScala' for client Visual Studio Code 1.74.3.[0m
+Jul 08, 2023 4:09:31 PM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.16.3 by Redgate
+Jul 08, 2023 4:09:31 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+Jul 08, 2023 4:09:31 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+Jul 08, 2023 4:09:35 PM org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:file:/home/qnouro/Desktop/projects/TodoGenScala/.metals/metals (H2 2.1)
+Jul 08, 2023 4:09:35 PM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.036s)
+Jul 08, 2023 4:09:35 PM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+Jul 08, 2023 4:09:35 PM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.07.08 16:09:36 INFO  time: initialize in 4.86s[0m
+2023.07.08 16:09:39 INFO  Attempting to connect to the build server...[0m
+2023.07.08 16:09:39 INFO  Bloop uses /usr/lib/jvm/java-11-openjdk-amd64 defined at /home/qnouro/.bloop/bloop.json[0m
+2023.07.08 16:09:47 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/qnouro/Desktop/projects/TodoGenScala/.metals/bsp.trace.json or /home/qnouro/.cache/metals/bsp.trace.json[0m
+2023.07.08 16:09:48 INFO  no build target found for /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/dataclass/DayOfWeek.scala. Using presentation compiler with project's scala-library version: 3.2.2[0m
+2023.07.08 16:09:48 INFO  Attempting to connect to the build server...[0m
+2023.07.08 16:09:48 INFO  Bloop uses /usr/lib/jvm/java-11-openjdk-amd64 defined at /home/qnouro/.bloop/bloop.json[0m
+2023.07.08 16:09:48 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/qnouro/Desktop/projects/TodoGenScala/project/.metals/bsp.trace.json or /home/qnouro/.cache/metals/bsp.trace.json[0m
+2023.07.08 16:09:48 INFO  time: Connected to build server in 9.6s[0m
+2023.07.08 16:09:48 INFO  Connected to Build server: Bloop v1.5.6[0m
+2023.07.08 16:09:49 INFO  time: code lens generation in 9.17s[0m
+2023.07.08 16:09:49 INFO  time: Imported build in 0.4s[0m
+2023.07.08 16:09:52 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/lib/src.zip. Java symbols will not be available.[0m
+2023.07.08 16:09:52 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/lib/src.zip. Java symbols will not be available.[0m
+2023.07.08 16:09:52 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/lib/src.zip. Java symbols will not be available.[0m
+2023.07.08 16:09:52 INFO  time: indexed workspace in 3.29s[0m
+2023.07.08 16:09:53 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/dataclass/DayOfWeek.scala[0m
+2023.07.08 16:09:52 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/dataclass/DayOfWeek.scala[0m
+2023.07.08 16:10:03 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/runner/Runner.scala[0m
+2023.07.08 16:10:50 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/dataclass/DayOfWeek.scala[0m
+2023.07.08 16:11:26 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/dataclass/DayOfWeek.scala[0m
+2023.07.08 16:15:39 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/dataclass/DayOfWeek.scala[0m
+2023.07.08 16:15:55 WARN  Using indexes to guess the definition of DayOfWeek[0m
+2023.07.08 16:15:56 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/runner/Runner.scala[0m
+2023.07.08 16:15:57 WARN  Using indexes to guess the definition of DayOfWeek[0m
+2023.07.08 16:16:01 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/runner/Runner.scala[0m
+2023.07.08 16:16:07 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/runner/Runner.scala[0m
+2023.07.08 16:18:29 WARN  Using indexes to guess the definition of DayOfWeek[0m
+2023.07.08 16:18:31 WARN  Using indexes to guess the definition of DayOfWeek[0m
+2023.07.08 16:18:34 WARN  Using indexes to guess the definition of DayOfWeek[0m
+Jul 08, 2023 4:18:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 352
+2023.07.08 16:18:42 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/runner/Runner.scala[0m
+2023.07.08 16:19:17 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/runner/Runner.scala[0m
+2023.07.08 16:19:53 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/runner/Runner.scala[0m
+2023.07.08 16:20:01 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/runner/Runner.scala[0m
+2023.07.08 16:20:08 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/runner/Runner.scala[0m
+2023.07.08 16:20:16 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/runner/Runner.scala[0m
+2023.07.08 16:20:34 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/runner/Runner.scala[0m
+2023.07.08 16:20:41 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/runner/Runner.scala[0m
+2023.07.08 16:20:47 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/runner/Runner.scala[0m
+Jul 08, 2023 4:23:16 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+Jul 08, 2023 4:23:50 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+Jul 08, 2023 4:23:52 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+2023.07.08 16:23:53 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/dataclass/DayOfWeek.scala[0m
+Jul 08, 2023 4:24:35 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+2023.07.08 16:25:10 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/dataclass/DayOfWeek.scala[0m
+2023.07.08 16:25:52 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/dataclass/DayOfWeek.scala[0m
+2023.07.08 16:25:58 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/dataclass/DayOfWeek.scala[0m
+2023.07.08 16:27:05 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/dataclass/DayOfWeek.scala[0m
+Jul 08, 2023 4:27:08 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbols(MetalsInteractive.scala:167)
+	at scala.meta.internal.pc.PcDefinitionProvider.findDefinitions(PcDefinitionProvider.scala:91)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitions(PcDefinitionProvider.scala:56)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitions(PcDefinitionProvider.scala:33)
+
+2023.07.08 16:27:11 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/dataclass/DayOfWeek.scala[0m
+2023.07.08 16:27:12 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/dataclass/DayOfWeek.scala[0m
+2023.07.08 16:27:21 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/dataclass/DayOfWeek.scala[0m
+2023.07.08 16:27:30 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/dataclass/DayOfWeek.scala[0m
+2023.07.08 16:27:51 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/runner/Runner.scala[0m
+2023.07.08 16:28:02 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/runner/Runner.scala[0m
+2023.07.08 16:28:17 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/runner/Runner.scala[0m
+2023.07.08 16:28:51 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/test/scala/dataclass/DayOfWeekTest.scala[0m
+2023.07.08 16:29:27 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/test/scala/math/MathUtilsTest.scala[0m
+2023.07.08 16:30:28 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/runner/Runner.scala[0m
+2023.07.08 16:30:37 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/dataclass/DayOfWeek.scala[0m
+2023.07.08 16:30:39 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/dataclass/DayOfWeek.scala[0m
+2023.07.08 16:30:49 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/test/scala/dataclass/DayOfWeekTest.scala[0m
+2023.07.08 16:31:03 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/runner/Runner.scala[0m
+2023.07.08 16:31:12 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/runner/Runner.scala[0m
+2023.07.08 16:31:17 WARN  Using indexes to guess the definition of getCurrentDate[0m
+2023.07.08 16:31:18 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/runner/Runner.scala[0m
+2023.07.08 16:31:23 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/runner/Runner.scala[0m
+2023.07.08 16:31:29 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/dataclass/DayOfWeek.scala[0m
+2023.07.08 16:31:39 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/dataclass/DayOfWeek.scala[0m
+2023.07.08 16:32:13 WARN  Using indexes to guess the definition of AnyFunSuite[0m
+2023.07.08 16:32:36 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/test/scala/math/MathUtilsTest.scala[0m
+2023.07.08 16:33:01 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/test/scala/dataclass/DayOfWeekTest.scala[0m
+2023.07.08 16:34:16 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/test/scala/dataclass/DayOfWeekTest.scala[0m
+2023.07.08 16:34:38 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/test/scala/dataclass/DayOfWeekTest.scala[0m
+2023.07.08 16:35:31 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/test/scala/dataclass/DayOfWeekTest.scala[0m
+2023.07.08 16:35:40 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/test/scala/dataclass/DayOfWeekTest.scala[0m
+Jul 08, 2023 4:37:40 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+2023.07.08 16:38:04 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/dataclass/DayOfWeek.scala[0m
+2023.07.08 16:38:49 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/test/scala/dataclass/DayOfWeekTest.scala[0m
+2023.07.08 16:38:51 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/test/scala/dataclass/DayOfWeekTest.scala[0m
+2023.07.08 16:39:11 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/test/scala/dataclass/DayOfWeekTest.scala[0m
+2023.07.08 16:39:18 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/test/scala/dataclass/DayOfWeekTest.scala[0m
+2023.07.08 16:39:24 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/test/scala/dataclass/DayOfWeekTest.scala[0m
+2023.07.08 16:42:15 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/test/scala/dataclass/DayOfWeekTest.scala[0m
+2023.07.08 16:42:17 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/test/scala/dataclass/DayOfWeekTest.scala[0m
+2023.07.08 16:43:17 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/test/scala/dataclass/DayOfWeekTest.scala[0m
+2023.07.08 16:43:37 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/test/scala/dataclass/DayOfWeekTest.scala[0m
+2023.07.08 16:43:58 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/test/scala/dataclass/DayOfWeekTest.scala[0m
+2023.07.08 16:44:33 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/test/scala/dataclass/DayOfWeekTest.scala[0m
+2023.07.08 16:44:56 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/test/scala/dataclass/DayOfWeekTest.scala[0m
+2023.07.08 16:45:23 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/test/scala/dataclass/DayOfWeekTest.scala[0m
+Jul 08, 2023 4:45:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4515
+Jul 08, 2023 4:45:34 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: assertion failed
+java.lang.AssertionError: assertion failed
+	at scala.Predef$.assert(Predef.scala:264)
+	at scala.Predef$Ensuring$.ensuring$extension(Predef.scala:359)
+	at dotty.tools.dotc.semanticdb.SemanticSymbolBuilder.find$1(SemanticSymbolBuilder.scala:90)
+	at dotty.tools.dotc.semanticdb.SemanticSymbolBuilder.addOverloadIdx$1(SemanticSymbolBuilder.scala:95)
+	at dotty.tools.dotc.semanticdb.SemanticSymbolBuilder.addDescriptor$1(SemanticSymbolBuilder.scala:116)
+	at dotty.tools.dotc.semanticdb.SemanticSymbolBuilder.addSymName(SemanticSymbolBuilder.scala:148)
+	at dotty.tools.dotc.semanticdb.SemanticSymbolBuilder.addOwner$1(SemanticSymbolBuilder.scala:75)
+	at dotty.tools.dotc.semanticdb.SemanticSymbolBuilder.addSymName(SemanticSymbolBuilder.scala:148)
+	at dotty.tools.dotc.semanticdb.SemanticSymbolBuilder.symbolName(SemanticSymbolBuilder.scala:29)
+	at dotty.tools.dotc.semanticdb.Scala3$SymbolOps$.symbolName(Scala3.scala:271)
+	at dotty.tools.dotc.semanticdb.ExtractSemanticDB$Extractor.registerDefinition(ExtractSemanticDB.scala:354)
+	at dotty.tools.dotc.semanticdb.ExtractSemanticDB$Extractor.traverse(ExtractSemanticDB.scala:184)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeTraverser.apply(Trees.scala:1660)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeTraverser.apply(Trees.scala:1660)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1532)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1534)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver$$anonfun$1(Trees.scala:1620)
+	at scala.collection.LinearSeqOps.foldLeft(LinearSeq.scala:183)
+	at scala.collection.LinearSeqOps.foldLeft$(LinearSeq.scala:179)
+	at scala.collection.immutable.List.foldLeft(List.scala:79)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1620)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeTraverser.traverseChildren(Trees.scala:1661)
+	at dotty.tools.dotc.semanticdb.ExtractSemanticDB$Extractor.traverse(ExtractSemanticDB.scala:181)
+	at dotty.tools.dotc.semanticdb.ExtractSemanticDB$Extractor.traverse$$anonfun$11(ExtractSemanticDB.scala:204)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at dotty.tools.dotc.semanticdb.ExtractSemanticDB$Extractor.traverse(ExtractSemanticDB.scala:204)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeTraverser.apply(Trees.scala:1660)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeTraverser.apply(Trees.scala:1660)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1624)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1538)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeTraverser.traverseChildren(Trees.scala:1661)
+	at dotty.tools.dotc.semanticdb.ExtractSemanticDB$Extractor.traverse(ExtractSemanticDB.scala:178)
+	at dotty.tools.dotc.semanticdb.ExtractSemanticDB$Extractor.traverse$$anonfun$1(ExtractSemanticDB.scala:142)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at dotty.tools.dotc.semanticdb.ExtractSemanticDB$Extractor.traverse(ExtractSemanticDB.scala:142)
+	at scala.meta.internal.pc.SemanticdbTextDocumentProvider.textDocument(SemanticdbTextDocumentProvider.scala:36)
+
+2023.07.08 16:45:34 INFO  time: code lens generation in 3.7s[0m
+2023.07.08 16:45:34 INFO  time: code lens generation in 3.09s[0m
+2023.07.08 16:45:34 INFO  time: code lens generation in 2.23s[0m
+2023.07.08 16:45:34 INFO  time: code lens generation in 3.38s[0m
+Jul 08, 2023 4:45:35 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: assertion failed
+java.lang.AssertionError: assertion failed
+	at scala.Predef$.assert(Predef.scala:264)
+	at scala.Predef$Ensuring$.ensuring$extension(Predef.scala:359)
+	at dotty.tools.dotc.semanticdb.SemanticSymbolBuilder.find$1(SemanticSymbolBuilder.scala:90)
+	at dotty.tools.dotc.semanticdb.SemanticSymbolBuilder.addOverloadIdx$1(SemanticSymbolBuilder.scala:95)
+	at dotty.tools.dotc.semanticdb.SemanticSymbolBuilder.addDescriptor$1(SemanticSymbolBuilder.scala:116)
+	at dotty.tools.dotc.semanticdb.SemanticSymbolBuilder.addSymName(SemanticSymbolBuilder.scala:148)
+	at dotty.tools.dotc.semanticdb.SemanticSymbolBuilder.addOwner$1(SemanticSymbolBuilder.scala:75)
+	at dotty.tools.dotc.semanticdb.SemanticSymbolBuilder.addSymName(SemanticSymbolBuilder.scala:148)
+	at dotty.tools.dotc.semanticdb.SemanticSymbolBuilder.symbolName(SemanticSymbolBuilder.scala:29)
+	at dotty.tools.dotc.semanticdb.Scala3$SymbolOps$.symbolName(Scala3.scala:271)
+	at dotty.tools.dotc.semanticdb.ExtractSemanticDB$Extractor.registerDefinition(ExtractSemanticDB.scala:354)
+	at dotty.tools.dotc.semanticdb.ExtractSemanticDB$Extractor.traverse(ExtractSemanticDB.scala:184)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeTraverser.apply(Trees.scala:1660)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeTraverser.apply(Trees.scala:1660)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1532)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1534)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver$$anonfun$1(Trees.scala:1620)
+	at scala.collection.LinearSeqOps.foldLeft(LinearSeq.scala:183)
+	at scala.collection.LinearSeqOps.foldLeft$(LinearSeq.scala:179)
+	at scala.collection.immutable.List.foldLeft(List.scala:79)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1620)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeTraverser.traverseChildren(Trees.scala:1661)
+	at dotty.tools.dotc.semanticdb.ExtractSemanticDB$Extractor.traverse(ExtractSemanticDB.scala:181)
+	at dotty.tools.dotc.semanticdb.ExtractSemanticDB$Extractor.traverse$$anonfun$11(ExtractSemanticDB.scala:204)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at dotty.tools.dotc.semanticdb.ExtractSemanticDB$Extractor.traverse(ExtractSemanticDB.scala:204)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeTraverser.apply(Trees.scala:1660)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeTraverser.apply(Trees.scala:1660)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1624)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1538)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeTraverser.traverseChildren(Trees.scala:1661)
+	at dotty.tools.dotc.semanticdb.ExtractSemanticDB$Extractor.traverse(ExtractSemanticDB.scala:178)
+	at dotty.tools.dotc.semanticdb.ExtractSemanticDB$Extractor.traverse$$anonfun$1(ExtractSemanticDB.scala:142)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at dotty.tools.dotc.semanticdb.ExtractSemanticDB$Extractor.traverse(ExtractSemanticDB.scala:142)
+	at scala.meta.internal.pc.SemanticdbTextDocumentProvider.textDocument(SemanticdbTextDocumentProvider.scala:36)
+
+2023.07.08 16:45:46 WARN  Using indexes to guess the definition of DayOfWeek[0m
+2023.07.08 16:45:48 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/test/scala/dataclass/DayOfWeekTest.scala[0m
+2023.07.08 16:46:04 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/test/scala/dataclass/DayOfWeekTest.scala[0m
+2023.07.08 16:46:08 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/test/scala/dataclass/DayOfWeekTest.scala[0m
+2023.07.08 16:46:51 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/test/scala/dataclass/DayOfWeekTest.scala[0m
+2023.07.08 16:46:54 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/test/scala/dataclass/DayOfWeekTest.scala[0m
+Jul 08, 2023 4:47:20 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.SignatureHelpProvider$.isValid(SignatureHelpProvider.scala:83)
+	at scala.meta.internal.pc.SignatureHelpProvider$.notCurrentApply(SignatureHelpProvider.scala:96)
+	at scala.meta.internal.pc.SignatureHelpProvider$.$anonfun$1(SignatureHelpProvider.scala:48)
+	at scala.collection.StrictOptimizedLinearSeqOps.loop$3(LinearSeq.scala:280)
+	at scala.collection.StrictOptimizedLinearSeqOps.dropWhile(LinearSeq.scala:282)
+	at scala.collection.StrictOptimizedLinearSeqOps.dropWhile$(LinearSeq.scala:278)
+	at scala.collection.immutable.List.dropWhile(List.scala:79)
+	at scala.meta.internal.pc.SignatureHelpProvider$.signatureHelp(SignatureHelpProvider.scala:48)
+
+2023.07.08 16:48:23 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/test/scala/dataclass/DayOfWeekTest.scala[0m
+2023.07.08 16:48:34 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/test/scala/dataclass/DayOfWeekTest.scala[0m
+Jul 08, 2023 4:48:48 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5155
+2023.07.08 16:48:51 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/test/scala/dataclass/DayOfWeekTest.scala[0m
+2023.07.08 16:48:57 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/test/scala/dataclass/DayOfWeekTest.scala[0m
+2023.07.08 16:49:09 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/test/scala/dataclass/DayOfWeekTest.scala[0m
+2023.07.08 16:49:20 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/test/scala/dataclass/DayOfWeekTest.scala[0m
+2023.07.08 16:49:49 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/test/scala/dataclass/DayOfWeekTest.scala[0m
+2023.07.08 16:49:57 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/test/scala/dataclass/DayOfWeekTest.scala[0m
+2023.07.08 16:50:04 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/test/scala/dataclass/DayOfWeekTest.scala[0m
+2023.07.08 16:50:07 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/test/scala/dataclass/DayOfWeekTest.scala[0m
+2023.07.08 16:50:16 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/test/scala/dataclass/DayOfWeekTest.scala[0m
+2023.07.08 16:50:23 WARN  Using indexes to guess the definition of DayOfWeek[0m
+2023.07.08 16:50:37 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/test/scala/dataclass/DayOfWeekTest.scala[0m
+2023.07.08 16:50:47 WARN  no build target for: /home/qnouro/Desktop/projects/TodoGenScala/src/test/scala/dataclass/DayOfWeekTest.scala[0m

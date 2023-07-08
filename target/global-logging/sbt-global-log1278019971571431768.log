@@ -1,0 +1,29 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(~run, Some(8180e311-61cb-4356-94d0-7d7f2084c22c), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__runWatch console0, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtStashOnFailure, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__preWatch console0, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 4 Scala sources to /home/qnouro/Desktop/projects/TodoGenScala/target/scala-3.3.0/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- Error: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/runner/Runner.scala:16:4 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m16 |[0m    [33mdef[0m [36mgetDayOfWeek[0m([36mdate[0m: [35mLocalDate[0m): [35mDayOfWeek[0m = DayOfWeek(date.getDayOfWeek())[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m    ^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m    indented definitions expected, def found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E040] Syntax Error: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/runner/Runner.scala:19:1 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m19 |[0m}[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m '}' expected, but eof found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E145] Syntax Error: /home/qnouro/Desktop/projects/TodoGenScala/src/main/scala/runner/Runner.scala:10:9 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m10 |[0m    [33menum[0m [35mDayOfWeek[0m:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m         ^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m         Enumerations must contain at least one case[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 1 s, completed Jul 8, 2023, 4:02:30 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(resumeFromFailure, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtPopOnFailure, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__postWatch console0, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__waitWatch console0, None, Some(CommandSource(console0)))[0m

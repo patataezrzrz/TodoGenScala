@@ -1,41 +1,8 @@
-[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E046] Cyclic Error: /home/qnouro/Desktop/projects/todoGenerator/src/test/scala/math/MathUtilsTest.scala:5:28 [0m[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m5 |[0m[33mclass[0m [35mMathUtilsTest[0m [33mextends[0m [35mAnyFunSuite[0m{[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m  |[0m                            ^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m  |[0m                            Cyclic reference involving val <import>[0m
-[0m[[0m[31merror[0m] [0m[0m[31m  |[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m  |[0m longer explanation available when compiling with `-explain`[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /home/qnouro/Desktop/projects/todoGenerator/src/test/scala/math/MathUtilsTest.scala:3:11 [0m[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m3 |[0m[33mimport[0m org.scalatest.funsuite.AnyFunSuite[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m  |[0m       ^^^^^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m  |[0m       value scalatest is not a member of org[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /home/qnouro/Desktop/projects/todoGenerator/src/test/scala/math/MathUtilsTest.scala:7:4 [0m[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m7 |[0m    test([31m"'double' should handle 0"[0m) {[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m  |[0m    ^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m  |[0m    Not found: test[0m
-[0m[[0m[31merror[0m] [0m[0m[31m  |[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m  |[0m longer explanation available when compiling with `-explain`[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /home/qnouro/Desktop/projects/todoGenerator/src/test/scala/math/MathUtilsTest.scala:13:4 [0m[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m13 |[0m    test([31m"'double' should handle 1"[0m) {[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m    ^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m   |[0m    Not found: test[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /home/qnouro/Desktop/projects/TodoGenScala/src/test/scala/dataclass/DayOfWeekTest.scala:27:35 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m27 |[0m            DayOfWeek.getDayOfWeek([31m0[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                   ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                   Found:    ([31m0[0m : Int)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                   Required: java.time.LocalDate[0m
 [0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
 [0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /home/qnouro/Desktop/projects/todoGenerator/src/test/scala/math/MathUtilsTest.scala:19:4 [0m[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m19 |[0m    test([31m"'double' should handle negatives"[0m){[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m    ^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m   |[0m    Not found: test[0m
-[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /home/qnouro/Desktop/projects/todoGenerator/src/test/scala/math/MathUtilsTest.scala:25:4 [0m[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m25 |[0m    test([31m"test with Int.MaxValue"[0m) (pending)[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m    ^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m   |[0m    Not found: test[0m
-[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /home/qnouro/Desktop/projects/todoGenerator/src/test/scala/math/MathUtilsTest.scala:25:36 [0m[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m25 |[0m    test([31m"test with Int.MaxValue"[0m) (pending)[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                    ^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                    Not found: pending[0m
-[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
-[0m[[0m[31merror[0m] [0m[0m7 errors found[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

@@ -1,0 +1,26 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__runWatch console0, Some(e8bfe49f-6f03-4323-b073-8fcc64140858), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtStashOnFailure, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__preWatch console0, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(test, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / test[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /home/qnouro/Desktop/projects/TodoGenScala/target/scala-3.3.0/test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mDayOfWeekTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- 'getDayOfWeek' should be able to parse every day of the week[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- DayOfWeek should raise error for values above 6 or below 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mMathUtilsTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- 'double' should handle 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- 'double' should handle 1[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- 'double' should handle negatives[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[33m- test with Int.MaxValue (pending)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 166 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 5[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 2, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 5, failed 0, canceled 0, ignored 0, pending 1[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 1 s, completed Jul 8, 2023, 4:50:48 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(resumeFromFailure, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtPopOnFailure, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__postWatch console0, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(resumeFromFailure, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__waitWatch console0, None, None)[0m

@@ -1,0 +1,22 @@
+- Goal:
+We have 6 categories (Chores, Productivity, Body activity, Self care, Nutrition, Relationships) for which we want to generate tasks daily.
+This generation depends on 2 things:
+1- The day of the week
+2- A variable number of tasks to generate (which depends on the day)
+
+1- Start by detecting the day.
+2- Have a Json instead of a database to start with. (For read-only)
+
+
+Game plan:
+-----------
+- Have 1 case class for categories, and 1 for activities
+- Need to initialize the categories with all the activities (activities are stored in a database).
+- Need to generate the todo based on the quota of every category.
+
+
+Goal for today:
+---------------
+1- Be able to retrieve the day
+2- Create both classes with their respective methods
+3- Add unit tests
