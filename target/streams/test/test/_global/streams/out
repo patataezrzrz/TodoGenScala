@@ -1,5 +1,5 @@
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(dataclass.DayOfWeekTest, org.scalatest.tools.Framework$$anon$1@2df99ae1, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(math.MathUtilsTest, org.scalatest.tools.Framework$$anon$1@2df99ae1, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(math.MathUtilsTest, org.scalatest.tools.Framework$$anon$1@3847caed, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(dataclass.DayOfWeekTest, org.scalatest.tools.Framework$$anon$1@3847caed, false, [SuiteSelector])[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mDayOfWeekTest:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- 'getDayOfWeek' should be able to parse every day of the week[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- DayOfWeek should raise error for values above 6 or below 0[0m[0m
@@ -8,7 +8,7 @@
 [0m[[0m[0minfo[0m] [0m[0m[32m- 'double' should handle 1[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- 'double' should handle negatives[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[33m- test with Int.MaxValue (pending)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 166 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 138 milliseconds.[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 5[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 2, aborted 0[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 5, failed 0, canceled 0, ignored 0, pending 1[0m[0m

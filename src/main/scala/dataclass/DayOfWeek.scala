@@ -3,14 +3,9 @@ package dataclass
 import java.time.LocalDate
 import javax.management.InvalidAttributeValueException
 
-enum DayOfWeek(i: Int) {
-	case Monday extends DayOfWeek(0)
-	case Tuesday extends DayOfWeek(1)
-	case Wednesday extends DayOfWeek(2)
-	case Thursday extends DayOfWeek(3)
-	case Friday extends DayOfWeek(4)
-	case Saturday extends DayOfWeek(5)
-	case Sunday extends DayOfWeek(6)
+
+enum DayOfWeek {
+	case Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
 }
 
 object DayOfWeek{
@@ -27,6 +22,14 @@ object DayOfWeek{
 		}
 	}
 
+	/**
+	  * @return a LocalDate representing the current date.
+	  */
 	def getCurrentDate(): LocalDate = LocalDate.now()
+
+	/**
+	  * @param date to parse.
+	  * @return DayOfWeek enumerate corresponding to the parsed date.
+	  */
 	def getDayOfWeek(date: LocalDate): DayOfWeek = DayOfWeek(date.getDayOfWeek().getValue() % 7)
 }
