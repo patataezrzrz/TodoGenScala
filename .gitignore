@@ -1,6 +1,10 @@
 # Created by https://www.toptal.com/developers/gitignore/api/scala,sbt,visualstudiocode,bloop
 # Edit at https://www.toptal.com/developers/gitignore?templates=scala,sbt,visualstudiocode,bloop
 
+
+### Metals ###
+.metals/
+
 ### Bloop ###
 .bloop/
 
@@ -29,6 +33,7 @@ project/plugins/project/
 hs_err_pid*
 
 ### VisualStudioCode ###
+.vscode/
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
