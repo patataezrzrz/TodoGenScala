@@ -21,7 +21,7 @@ sealed abstract case class Category(
     private var activitiesPromise: Option[Vector[Activity]] = None
     lazy val activities: Vector[Activity] = {
         activitiesPromise match {
-            case Some(value) => activitiesPromise.get
+            case Some(value) => value
             case None => throw new NullPointerException("Variable `activities` has not been defined")
         }
     }

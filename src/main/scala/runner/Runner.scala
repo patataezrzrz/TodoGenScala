@@ -1,6 +1,7 @@
 package runner
 
 import dataclass._
+import scala.annotation.internal.Body
 
 
 object Runner{
@@ -46,7 +47,7 @@ object Runner{
     val map = Map[String, Vector[Activity]](
       "Productivity" -> prodActivities,
       "Chores" -> choresActivities,
-      "SelfCare" -> selfCareActivities,
+      "Self care" -> selfCareActivities,
     )
     map
   }
@@ -59,7 +60,12 @@ object Runner{
     activities.foreach(x => {
       x._1 match {
         case "Productivity" => {Productivity.setActivities(x._2)}
-        case _ => {Productivity.setActivities(x._2)}
+        case "Chores" => {Chores.setActivities(x._2)}
+        case "Body activity" => {BodyActivity.setActivities(x._2)}
+        case "Relationships" => {Relationships.setActivities(x._2)}
+        case "Self care" => {SelfCare.setActivities(x._2)}
+        case "Nutrition" => {Nutrition.setActivities(x._2)}
+        case _ => throw new Exception("Invalid category name in some activities.")
       }
     })
 

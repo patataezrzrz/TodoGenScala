@@ -15,8 +15,9 @@ Game plan:
 - Need to generate the todo based on the quota of every category.
 
 
-Goal for today:
----------------
-1- Be able to retrieve the day
-2- Create both classes with their respective methods
-3- Add unit tests
+Goal for next session:
+----------------------
+1- Convert the frequency on a task to whether it is concerned for a generation or not
+2- Implement the task generation method for categories.
+3- Find a way to remove the ugly side-effect
+4- Unit testing for new features + the activities setting
