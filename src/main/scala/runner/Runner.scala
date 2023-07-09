@@ -7,15 +7,10 @@ import scala.annotation.internal.Body
 object Runner{
     
   def main(args: Array[String]): Unit = {
-    val activities = generateDummyActivities()
-
-
-    // Very ugly side effect 
-    populateCategories(activities)
-
-    val categories = getAllCategories()
+    val activities: Map[String, Vector[Activity]] = generateActivities()
+    val categories: Vector[Category] = initCategories()
+    val populatedCategories: Vector[Category] = categories.map(c => populateCategory(c, activities))
     
-
     categories.foreach((x: Category) => println(x.name))
     println("done")
   }
@@ -27,7 +22,7 @@ object Runner{
     Map[String, Vector[Activity]]()
   }
 
-  def generateDummyActivities(): Map[String, Vector[Activity]] = {
+  def generateActivities(): Map[String, Vector[Activity]] = {
     val prodActivities = Vector[Activity](
       Activity("Work", "Daily", 1),
       Activity("Read dev blog", "Daily", 1),
@@ -52,22 +47,24 @@ object Runner{
     map
   }
 
-  def getAllCategories(): Vector[Category] = {
-    Vector[Category](Productivity, SelfCare, Chores, BodyActivity, Relationships, Nutrition)
+  def initCategories(): Vector[Category] = {
+    val productivity = Category("productivity", 1, 2)
+    val selfCare = Category("self care", 1, 2)
+    val chores = Category("chores", 2, 3)
+    val bodyActivity = Category("body activity", 1, 1)
+    val relationships = Category("relationships", 1, 2)
+    val nutrition = Category("nutrition", 1, 2)
+
+    Vector[Category](
+      productivity, selfCare, chores, bodyActivity, relationships, nutrition
+    )
   }
 
-  def populateCategories(activities: Map[String, Vector[Activity]]): Unit = {
-    activities.foreach(x => {
-      x._1 match {
-        case "Productivity" => {Productivity.setActivities(x._2)}
-        case "Chores" => {Chores.setActivities(x._2)}
-        case "Body activity" => {BodyActivity.setActivities(x._2)}
-        case "Relationships" => {Relationships.setActivities(x._2)}
-        case "Self care" => {SelfCare.setActivities(x._2)}
-        case "Nutrition" => {Nutrition.setActivities(x._2)}
-        case _ => throw new Exception("Invalid category name in some activities.")
-      }
-    })
-
+  def populateCategory(
+    category: Category,
+    activities: Map[String, Vector[Activity]]
+  ): Category = {
+    val categoryActivities: Vector[Activity] = activities.getOrElse(category.name, Vector[Activity]())
+    category.setActivities(categoryActivities)
   }
 }

@@ -1,6 +1,5 @@
 package dataclass
 
-import dataclass.Productivity
 import dataclass.Activity
 
 import java.time.LocalDate
@@ -10,16 +9,17 @@ import org.scalatest.OneInstancePerTest
 
 class CategoryTest extends AnyFunSuite with OneInstancePerTest {
     test("Categories should be found with the correct values"){
-        assert(Productivity.getWeekendQuota == 1)
-        assert(Productivity.getWorkdayQuota == 2)
+        val productivity = Category("productivity", 1, 1)
+        assert(productivity.workdayQuota == 1)
+        assert(productivity.weekendQuota == 1)
     }
 
     test("Categories should be able to be given an activity"){
         val jogging = Activity("jogging", "weekly", 2)
         val activities = Vector[Activity](jogging)
 
-        Productivity.setActivities(activities)
-        val prodActivities = Productivity.getActivities 
+        val productivity = Category("productivity", 1, 2).setActivities(activities)
+        val prodActivities = productivity.activities 
 
         assert(!prodActivities.isEmpty)
         prodActivities match {
@@ -45,13 +45,13 @@ class CategoryTest extends AnyFunSuite with OneInstancePerTest {
             Activity("Play video games", "Daily", 1),
         )
 
-        Productivity.setActivities(prodActivities)
-        Chores.setActivities(choresActivities)
-        SelfCare.setActivities(selfCareActivities)
+        val productivity = Category("Productivity", 1, 1).setActivities(prodActivities)
+        val chores = Category("Chores", 1, 1).setActivities(choresActivities)
+        val selfcare = Category("SelfCare", 1, 1).setActivities(selfCareActivities)
 
 
-        assert(Productivity.activities equals prodActivities)
-        assert(Chores.activities equals choresActivities)
-        assert(SelfCare.activities equals selfCareActivities)
+        assert(productivity.activities equals prodActivities)
+        assert(chores.activities equals choresActivities)
+        assert(selfcare.activities equals selfCareActivities)
     }
 }
