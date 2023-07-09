@@ -1,0 +1,184 @@
+{
+    "Productivity": [
+        [
+            "Work",
+            "Daily",
+            1
+        ],
+        [
+            "Read Computer Vision blogs",
+            "Weekly",
+            3
+        ],
+        [
+            "Code for 15mn",
+            "Daily",
+            1
+        ],
+        [
+            "Study spanish for 15mn",
+            "Daily",
+            1
+        ],
+        [
+            "Listen to an audiobook",
+            "Weekly",
+            3
+        ],
+        [
+            "Read a book",
+            "Daily",
+            1
+        ]
+    ],
+    "Body Activity": [
+        [
+            "Have A Walk",
+            "Weekly",
+            1
+        ],
+        [
+            "Go To City-Center",
+            "Weekly",
+            1
+        ],
+        [
+            "Exercize at home",
+            "Daily",
+            1
+        ],
+        [
+            "Meditation",
+            "Daily",
+            1
+        ]
+    ],
+    "Self Care": [
+        [
+            "Be Grateful For Something & Write It Down",
+            "Weekly",
+            1
+        ],
+        [
+            "Burn A Candle",
+            "Weekly",
+            1
+        ],
+        [
+            "Watch Funny Videos On Youtube",
+            "Weekly",
+            1
+        ],
+        [
+            "Listen To My Favorite Music",
+            "Weekly",
+            1
+        ],
+        [
+            "Write A Letter To A Penpal",
+            "Weekly",
+            1
+        ],
+        [
+            "Record An Audio About How I Feel",
+            "Weekly",
+            1
+        ],
+        [
+            "Play Video Games",
+            "Weekly",
+            1
+        ]
+    ],
+    "Nutrition": [
+        [
+            "Make 2 Healthy Dish",
+            "Daily",
+            1
+        ],
+        [
+            "Drink 5 Cups Of Water",
+            "Daily",
+            1
+        ]
+    ],
+    "Relationships": [
+        [
+            "Contact Family Member",
+            "Weekly",
+            3
+        ],
+        [
+            "Contact A Friend",
+            "Weekly",
+            3
+        ],
+        [
+            "Thank Someone",
+            "Weekly",
+            3
+        ],
+        [
+            "Compliment Someone",
+            "Weekly",
+            3
+        ],
+        [
+            "Socialize Online",
+            "Weekly",
+            3
+        ]
+    ],
+    "Chores": [
+        [
+            "Shower",
+            "Daily",
+            1
+        ],
+        [
+            "Make Bed",
+            "Daily",
+            1
+        ],
+        [
+            "Brooming",
+            "Weekly",
+            2
+        ],
+        [
+            "Throw Garbage",
+            "Weekly",
+            3
+        ],
+        [
+            "Laundry",
+            "Weekly",
+            2
+        ],
+        [
+            "Clean Dishes",
+            "Daily",
+            1
+        ],
+        [
+            "Brush Teeth",
+            "Daily",
+            2
+        ],
+        [
+            "Run Errands",
+            "Weekly",
+            2
+        ],
+        [
+            "Tidy up Clothes",
+            "Weekly",
+            2
+        ],
+        [
+            "Clean mirror",
+            "Weekly",
+            1
+        ]
+    ]
+}

@@ -14,7 +14,7 @@ class CategoryTest extends AnyFunSuite {
     }
 
     test("Categories should be able to be given activities"){
-        val jogging = Activity("jogging", false, "weekly", 2)
+        val jogging = Activity("jogging", "weekly", 2)
         val activities = Vector[Activity](jogging)
 
         Productivity.setActivities(activities)

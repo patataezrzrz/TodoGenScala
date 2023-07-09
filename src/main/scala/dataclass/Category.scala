@@ -11,10 +11,12 @@ import dataclass.DayOfWeek
  * Store all the activities that belong to it
  * Generate a list of activities based on the day + quota.
  */
-sealed abstract class Category(
+sealed abstract case class Category(
     val workdayQuota: Int,
     val weekendQuota: Int,
 ){
+    def name: String = ???
+
     // The list of activities needs to be defined on runtime.
     private var activitiesPromise: Option[Vector[Activity]] = None
     lazy val activities: Vector[Activity] = {
@@ -40,4 +42,9 @@ sealed abstract class Category(
 }
 
 
-object Productivity extends Category(2, 1)
+object Productivity extends Category(2, 1){override def name: String = "Productivity"}
+object Chores extends Category(2, 4){override def name: String = "Chores"}
+object BodyActivity extends Category(1, 1){override def name: String = "Body activity"}
+object Relationships extends Category(1, 2){override def name: String = "Relationships"}
+object SelfCare extends Category(2, 3){override def name: String = "Self care"}
+object Nutrition extends Category(2, 3){override def name: String = "Nutrition"}

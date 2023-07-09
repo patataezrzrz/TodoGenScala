@@ -15,9 +15,8 @@ import java.time.LocalDate
  */
 final class Activity(
     val name: String,
-    val isMandatory: Boolean,
     val frequencyType: String,
     val frequencyVal: Int,
 ) {
-    def isConcerned(date: LocalDate): Boolean = true
+    def isMandatory(date: LocalDate): Boolean = true
 }
