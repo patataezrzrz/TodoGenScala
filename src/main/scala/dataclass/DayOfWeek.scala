@@ -22,6 +22,9 @@ object DayOfWeek{
 		}
 	}
 
+	def isWeekend(day: DayOfWeek): Boolean = day == Saturday || day == Sunday
+	def isWeekday(day: DayOfWeek): Boolean = !this.isWeekend(day)
+
 	/**
 	  * @return a LocalDate representing the current date.
 	  */

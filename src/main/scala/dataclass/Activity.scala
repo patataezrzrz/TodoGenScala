@@ -32,4 +32,11 @@ final class Activity(
             }
         }
     }
+
+    override def equals(that: Any): Boolean =
+        that match
+    {
+        case that: Activity => that.name == this.name && that.frequencyType == this.frequencyType && that.frequencyVal == this.frequencyVal
+        case _ => false
+    }
 }
