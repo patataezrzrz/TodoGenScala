@@ -34,5 +34,5 @@ object DayOfWeek{
 	  * @param date to parse.
 	  * @return DayOfWeek enumerate corresponding to the parsed date.
 	  */
-	def getDayOfWeek(date: LocalDate): DayOfWeek = DayOfWeek(date.getDayOfWeek().getValue() % 7)
+	def getDayOfWeek(date: LocalDate): DayOfWeek = DayOfWeek((date.getDayOfWeek().getValue() - 1) % 7)
 }

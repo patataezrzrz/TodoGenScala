@@ -58,7 +58,7 @@ class CategoryTest extends AnyFunSuite with OneInstancePerTest {
     }
 
     test("Categories should be able to generate activities"){
-        val today: DayOfWeek = getDayOfWeek(LocalDate.parse("2023-02-26"))
+        val sunday: DayOfWeek = getDayOfWeek(LocalDate.parse("2023-02-26"))
  
         val prodActivities = Vector[Activity](
             Activity("Work", "Daily", 1),
@@ -66,7 +66,7 @@ class CategoryTest extends AnyFunSuite with OneInstancePerTest {
             Activity("Code side project", "Daily", 1),
         )
         val productivity = Category("Productivity", 1, 1).setActivities(prodActivities)
-        assert(productivity.generateActivities(today) == prodActivities)
+        assert(productivity.generateActivities(sunday).toSet == prodActivities.toSet)
 
 
         val secondProdActivities = Vector[Activity](
@@ -75,17 +75,17 @@ class CategoryTest extends AnyFunSuite with OneInstancePerTest {
             Activity("Code side project", "Weekly", 1),
         )
         val secondProductivity = Category("Productivity", 1, 1).setActivities(secondProdActivities)
-        assert(secondProductivity.generateActivities(today) equals Vector(Activity("Work", "Daily", 1)))
+        assert(secondProductivity.generateActivities(sunday).toSet equals Vector(Activity("Work", "Daily", 1)).toSet)
 
-        // val thirdProdActivities = Vector[Activity](
-        //     Activity("Work", "Daily", 1),
-        //     Activity("Code side project", "Weekly", 1),
-        //     Activity("Read dev blog", "Weekly", 1),
-        // )
-        // val thirdProductivity = Category("Productivity", 1, 3).setActivities(thirdProdActivities)
+        val thirdProdActivities = Vector[Activity](
+            Activity("Code side project", "Weekly", 1),
+            Activity("Read dev blog", "Weekly", 1),
+            Activity("Work", "Daily", 1),
+        )
+        val thirdProductivity = Category("Productivity", 1, 3).setActivities(thirdProdActivities)
         
-        // thirdProductivity.generateActivities(today).foreach(println)
+        thirdProductivity.generateActivities(sunday).foreach(println)
         
-        // assert(thirdProductivity.generateActivities(today) equals thirdProdActivities)
+        assert(thirdProductivity.generateActivities(sunday).toSet equals thirdProdActivities.toSet)
     }
 }

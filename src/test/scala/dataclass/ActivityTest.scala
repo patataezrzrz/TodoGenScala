@@ -12,13 +12,13 @@ class ActivityTest extends AnyFunSuite{
     test("Should be able to create a new activity and retrieve mandatory status."){
         val jogging = Activity("jogging", "weekly", 3)
 
-        assert(jogging.isMandatory(getDayOfWeek(LocalDate.parse("2023-02-23"))) == true)
-        assert(jogging.isMandatory(getDayOfWeek(LocalDate.parse("2023-02-24"))) == false)
+        assert(jogging.isMandatory(getDayOfWeek(LocalDate.parse("2023-02-23"))) == false)  // Thursday
+        assert(jogging.isMandatory(getDayOfWeek(LocalDate.parse("2023-02-24"))) == true)
         assert(jogging.isMandatory(getDayOfWeek(LocalDate.parse("2023-02-25"))) == false)
-        assert(jogging.isMandatory(getDayOfWeek(LocalDate.parse("2023-02-26"))) == true)
-        assert(jogging.isMandatory(getDayOfWeek(LocalDate.parse("2023-02-27"))) == false)
-        assert(jogging.isMandatory(getDayOfWeek(LocalDate.parse("2023-02-28"))) == true)
-        assert(jogging.isMandatory(getDayOfWeek(LocalDate.parse("2023-03-01"))) == false)
+        assert(jogging.isMandatory(getDayOfWeek(LocalDate.parse("2023-02-26"))) == false)
+        assert(jogging.isMandatory(getDayOfWeek(LocalDate.parse("2023-02-27"))) == true)
+        assert(jogging.isMandatory(getDayOfWeek(LocalDate.parse("2023-02-28"))) == false)
+        assert(jogging.isMandatory(getDayOfWeek(LocalDate.parse("2023-03-01"))) == true)
         
         val walking = Activity("Walk", "Daily", 1)
         assert(walking.isMandatory(getDayOfWeek(LocalDate.parse("2023-02-23"))) == true)

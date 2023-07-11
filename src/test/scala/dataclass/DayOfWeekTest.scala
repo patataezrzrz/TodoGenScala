@@ -7,13 +7,13 @@ import java.time.LocalDate
 class DayOfWeekTest extends AnyFunSuite{
     test("'getDayOfWeek' should be able to parse every day of the week"){
         val parsedDaysToDOW: Map[LocalDate, DayOfWeek] = Map(
-            LocalDate.parse("2023-07-09") -> DayOfWeek.Monday,
-            LocalDate.parse("2023-07-10") -> DayOfWeek.Tuesday,
-            LocalDate.parse("2023-07-11") -> DayOfWeek.Wednesday,
-            LocalDate.parse("2023-07-12") -> DayOfWeek.Thursday,
-            LocalDate.parse("2023-07-13") -> DayOfWeek.Friday,
-            LocalDate.parse("2023-07-14") -> DayOfWeek.Saturday,
-            LocalDate.parse("2023-07-15") -> DayOfWeek.Sunday,
+            LocalDate.parse("2023-07-10") -> DayOfWeek.Monday,
+            LocalDate.parse("2023-07-11") -> DayOfWeek.Tuesday,
+            LocalDate.parse("2023-07-12") -> DayOfWeek.Wednesday,
+            LocalDate.parse("2023-07-13") -> DayOfWeek.Thursday,
+            LocalDate.parse("2023-07-14") -> DayOfWeek.Friday,
+            LocalDate.parse("2023-07-15") -> DayOfWeek.Saturday,
+            LocalDate.parse("2023-07-16") -> DayOfWeek.Sunday,
         )
         parsedDaysToDOW.foreach({
             (parsedDOW: LocalDate, dow: DayOfWeek) => {

@@ -53,6 +53,6 @@ case class Category(
         val sampledActivities = getNRandElement(nonMandatoryActivities, numberRemainingActivities)
 
 
-        mandatoryActivities ++ sampledActivities
+        return mandatoryActivities ++ sampledActivities
     }
 }
