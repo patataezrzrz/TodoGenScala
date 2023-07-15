@@ -34,24 +34,28 @@ case class Category(
             getNRandElement(remainingArray, n - 1, sampledArr :+ randElement)
         } 
 
+
+    /**
+      * 1. Filter all the mandatory activities.
+      * 2. If length is still less than quota:
+      * 2.1. Pick at most n activities randomly.
+      * 2.2 return it concatenated to the mandatory ones.
+      * @param dayOfWeek: Day of the week to generate the activities for.
+      * @return Vector of activities containing the mandatory ones and potentially
+      * optional ones if the quota allows it.
+      */
     def generateActivities(dayOfWeek: DayOfWeek): Vector[Activity] = {
         val quota = if (isWeekend(dayOfWeek)) weekendQuota else workdayQuota
-        // 1. Filter all the mandatory activities.
-        // 2. If length is still less than quota,
-        // 2.1. Pick at most n activities randomly.
+
         val mandatoryActivities = activities.filter((x: Activity) => x.isMandatory(dayOfWeek))
 
         val numberOfMandatoryActivities = mandatoryActivities.length
         val numberRemainingActivities = quota - numberOfMandatoryActivities
 
-        if (numberOfMandatoryActivities >= quota){
-            return mandatoryActivities
-        }
+        if (numberOfMandatoryActivities >= quota) return mandatoryActivities
 
         val nonMandatoryActivities = activities.filter((x: Activity) => !x.isMandatory(dayOfWeek ))
-
         val sampledActivities = getNRandElement(nonMandatoryActivities, numberRemainingActivities)
-
 
         return mandatoryActivities ++ sampledActivities
     }

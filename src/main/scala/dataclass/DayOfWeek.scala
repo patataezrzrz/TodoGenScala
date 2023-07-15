@@ -31,6 +31,12 @@ object DayOfWeek{
 	def getCurrentDate(): LocalDate = LocalDate.now()
 
 	/**
+	  *
+	  * @return enum DayOfWeek representing the current day.
+	  */
+	def getCurrentDay(): DayOfWeek = getDayOfWeek(LocalDate.now())
+
+	/**
 	  * @param date to parse.
 	  * @return DayOfWeek enumerate corresponding to the parsed date.
 	  */

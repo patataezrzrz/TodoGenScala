@@ -1,6 +1,7 @@
 package runner
 
 import dataclass._
+import dataclass.DayOfWeek
 import scala.annotation.internal.Body
 
 
@@ -10,9 +11,18 @@ object Runner{
     val activities: Map[String, Vector[Activity]] = generateActivities()
     val categories: Vector[Category] = initCategories()
     val populatedCategories: Vector[Category] = categories.map(c => populateCategory(c, activities))
-    
-    categories.foreach((x: Category) => println(x.name))
-    println("done")
+
+    val today = DayOfWeek.getCurrentDay()
+
+    // Current categories/activities status
+    populatedCategories.foreach((x: Category) => {
+      println(s"---Category name: ${x.name}----")
+      println(s"Category activities:")
+      x.activities.foreach((ac: Activity) => println(ac.name))
+      println("-----------------------------")
+      x.generateActivities(today).foreach((ac: Activity) => println(ac.name))
+      println("-----------------------------\n\n")
+    })
   }
 
   /**
@@ -38,22 +48,40 @@ object Runner{
       Activity("Listen to favorite music", "Daily", 1),
       Activity("Play video games", "Daily", 1),
     )
+    val bodyActivityActivities = Vector[Activity](
+      Activity("Go to the gym", "Weekly", 3),
+      Activity("Have a walk in the town center", "Optional", 0)
+      
+    )
+    val nutritionActivities = Vector[Activity](
+      Activity("Drink 5 cups of water.", "Daily", 1),
+      Activity("Cook 2 healthy meals (breakfast + dinner 2 portions)", "Daily", 1),
+      Activity("Make homemade snack.", "Optional", 0),
+    )
+    val relationshipsActivities = Vector[Activity](
+      Activity("Contact a friend", "Optional", 0),
+      Activity("Call grandparents", "Weekly", 1),
+      Activity("Write back to a friend", "Weekly", 1),
+    )
 
     val map = Map[String, Vector[Activity]](
       "Productivity" -> prodActivities,
       "Chores" -> choresActivities,
       "Self care" -> selfCareActivities,
+      "Body activity" -> bodyActivityActivities,
+      "Nutrition" -> nutritionActivities,
+      "Relationships" -> relationshipsActivities
     )
     map
   }
 
   def initCategories(): Vector[Category] = {
-    val productivity = Category("productivity", 1, 2)
-    val selfCare = Category("self care", 1, 2)
-    val chores = Category("chores", 2, 3)
-    val bodyActivity = Category("body activity", 1, 1)
-    val relationships = Category("relationships", 1, 2)
-    val nutrition = Category("nutrition", 1, 2)
+    val productivity = Category("Productivity", 1, 2)
+    val selfCare = Category("Self care", 1, 2)
+    val chores = Category("Chores", 2, 3)
+    val bodyActivity = Category("Body activity", 1, 1)
+    val relationships = Category("Relationships", 1, 2)
+    val nutrition = Category("Nutrition", 1, 2)
 
     Vector[Category](
       productivity, selfCare, chores, bodyActivity, relationships, nutrition
