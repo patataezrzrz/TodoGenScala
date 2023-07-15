@@ -7,17 +7,23 @@ This generation depends on 2 things:
 1- Start by detecting the day.
 2- Have a Json instead of a database to start with. (For read-only)
 
+Remaining tasks:
+----------------
+- Need to have the activities in a database
+- Need to be able to permanently add activities to said database
+- Need to be able to send http requests to the front.
+- Need to dockerize the backend
 
-Game plan:
------------
-- Have 1 case class for categories, and 1 for activities
-- Need to initialize the categories with all the activities (activities are stored in a database).
-- Need to generate the todo based on the quota of every category.
 
 
-Goal for next session:
-----------------------
-1- Convert the frequency on a task to whether it is concerned for a generation or not
-2- Implement the task generation method for categories.
-3- Find a way to remove the ugly side-effect
-4- Unit testing for new features + the activities setting
+List of routes to implement:
+---------------------------
+- /ping [GET]
+- /getTasks [GET]
+- /getTodayTasks [GET]
+- /editTask/<id>/<label> [GET, POST]
+- /finishTask/<id> [GET, POST]
+- /removeTask/<id> [GET, POST]
+- /createTask/<label>/<category> [GET, POST]
+- /generateTaskList [GET]
+- /getAllBooks [GET]

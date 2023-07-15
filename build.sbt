@@ -6,10 +6,13 @@ libraryDependencies ++= Seq(
     "org.scalatest" %% "scalatest" % "3.2.16"% Test
 )
 
-val circeVersion = "0.14.1"
-
+val Http4sVersion = "1.0.0-M21"
+val CirceVersion = "0.14.0-M5"
 libraryDependencies ++= Seq(
-  "io.circe" %% "circe-core",
-  "io.circe" %% "circe-generic",
-  "io.circe" %% "circe-parser"
-).map(_ % circeVersion)
+  "org.http4s"      %% "http4s-blaze-server" % Http4sVersion,
+  "org.http4s"      %% "http4s-circe"        % Http4sVersion,
+  "org.http4s"      %% "http4s-dsl"          % Http4sVersion,
+  "io.circe"        %% "circe-generic"       % CirceVersion,
+)
+
+libraryDependencies += "org.typelevel" %% "cats-effect" % "3.5.1"
